@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cape Wash & Vent | Dryer Vent Cleaning & House Washing on Cape Cod</title>
+<meta name="description" content="Locally owned dryer vent cleaning and soft house washing on Cape Cod. Before-and-after airflow readings, photo reports, fully insured. Serving Barnstable, Yarmouth, Mashpee, Dennis and nearby towns.">
+<link rel="canonical" href="https://capewashandvent.com/">
+
+<!-- Social share preview -->
+<meta property="og:title" content="Cape Wash & Vent">
+<meta property="og:description" content="Dryer vent cleaning and soft house washing on Cape Cod. Locally owned and fully insured.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://capewashandvent.com/">
+
+<!-- Helps Google understand your business. Update PHONE_NUMBER and EMAIL here too. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "Cape Wash & Vent",
+  "url": "https://capewashandvent.com/",
+  "telephone": "PHONE_NUMBER",
+  "email": "EMAIL",
+  "areaServed": ["Barnstable, MA", "Centerville, MA", "Hyannis, MA", "Osterville, MA", "Cotuit, MA", "Marstons Mills, MA", "West Barnstable, MA", "Yarmouth, MA", "Dennis, MA", "Mashpee, MA", "Sandwich, MA", "Falmouth, MA"],
+  "description": "Dryer vent cleaning and soft house washing on Cape Cod.",
+  "priceRange": "$$"
+}
+</script>
+
+<style>
+  :root {
+    --navy: #12324a;
+    --sea: #1f6f8b;
+    --foam: #e8f3f6;
+    --sand: #f6f1e7;
+    --ink: #1c2730;
+    --muted: #5a6b78;
+    --accent: #e07a3f;
+    --radius: 14px;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: var(--ink);
+    line-height: 1.6;
+    background: #fff;
+  }
+  a { color: var(--sea); }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 20px; }
+
+  /* Header */
+  header {
+    position: sticky; top: 0; z-index: 10;
+    background: rgba(255,255,255,0.96);
+    border-bottom: 1px solid #e3e9ee;
+  }
+  .nav { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+  .logo { font-weight: 800; font-size: 1.15rem; color: var(--navy); text-decoration: none; letter-spacing: -0.01em; }
+  .logo span { color: var(--sea); }
+  .nav-links { display: flex; gap: 22px; align-items: center; }
+  .nav-links a { color: var(--ink); text-decoration: none; font-size: 0.95rem; }
+  .nav-links a.btn { color: #fff; }
+  @media (max-width: 720px) { .nav-links a:not(.btn) { display: none; } }
+
+  .btn {
+    display: inline-block; background: var(--accent); color: #fff; text-decoration: none;
+    font-weight: 700; padding: 12px 22px; border-radius: 999px; transition: transform .1s, filter .15s;
+  }
+  .btn:hover { filter: brightness(1.05); transform: translateY(-1px); }
+  .btn.ghost { background: transparent; color: var(--navy); border: 2px solid var(--navy); }
+  .btn.small { padding: 8px 16px; font-size: 0.9rem; }
+
+  /* Hero */
+  .hero {
+    background: linear-gradient(160deg, var(--navy) 0%, var(--sea) 100%);
+    color: #fff; padding: 84px 0 96px; position: relative; overflow: hidden;
+  }
+  .hero::after {
+    content: ""; position: absolute; left: -10%; right: -10%; bottom: -60px; height: 120px;
+    background: #fff; border-radius: 50% 50% 0 0;
+  }
+  .hero h1 { font-size: clamp(2rem, 5vw, 3.2rem); line-height: 1.15; margin: 0 0 16px; letter-spacing: -0.02em; }
+  .hero p.lead { font-size: 1.2rem; max-width: 620px; opacity: 0.95; margin: 0 0 28px; }
+  .hero .btn.ghost { color: #fff; border-color: rgba(255,255,255,0.8); }
+  .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+  .badges { display: flex; gap: 18px; flex-wrap: wrap; margin-top: 32px; font-size: 0.95rem; opacity: 0.95; }
+  .badges div::before { content: "✓ "; font-weight: 700; }
+
+  section { padding: 72px 0; }
+  h2 { font-size: clamp(1.6rem, 3.5vw, 2.2rem); color: var(--navy); margin: 0 0 12px; letter-spacing: -0.01em; }
+  .sub { color: var(--muted); margin: 0 0 36px; max-width: 640px; }
+
+  /* Services */
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 20px; }
+  .card {
+    background: #fff; border: 1px solid #e3e9ee; border-radius: var(--radius); padding: 28px;
+    box-shadow: 0 2px 10px rgba(18,50,74,0.05);
+  }
+  .card .icon { font-size: 2rem; }
+  .card h3 { margin: 10px 0 6px; color: var(--navy); font-size: 1.25rem; }
+  .price { font-weight: 800; color: var(--sea); font-size: 1.1rem; margin: 4px 0 12px; }
+  .card ul { padding-left: 18px; margin: 0; color: var(--muted); }
+  .tag { display: inline-block; font-size: 0.75rem; font-weight: 700; background: var(--sand); color: #8a6a2f; padding: 3px 10px; border-radius: 999px; margin-left: 6px; vertical-align: middle; }
+
+  /* Why */
+  .why { background: var(--foam); }
+  .grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 28px; }
+  .why h3 { color: var(--navy); margin: 0 0 6px; font-size: 1.1rem; }
+  .why p { margin: 0; color: var(--muted); }
+
+  /* Signs */
+  .signs { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; }
+  .sign { background: var(--sand); border-radius: 10px; padding: 16px 18px; }
+  .sign strong { color: var(--navy); }
+
+  /* Process */
+  ol.steps { counter-reset: s; list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; }
+  ol.steps li { counter-increment: s; position: relative; padding: 14px 18px 14px 62px; border: 1px solid #e3e9ee; border-radius: 10px; }
+  ol.steps li::before {
+    content: counter(s); position: absolute; left: 16px; top: 50%; transform: translateY(-50%);
+    width: 32px; height: 32px; border-radius: 50%; background: var(--sea); color: #fff;
+    display: grid; place-items: center; font-weight: 700;
+  }
+
+  /* Area */
+  .towns { display: flex; flex-wrap: wrap; gap: 10px; }
+  .towns span { background: var(--foam); color: var(--navy); padding: 8px 14px; border-radius: 999px; font-size: 0.95rem; }
+
+  /* FAQ */
+  details { border-bottom: 1px solid #e3e9ee; padding: 16px 0; }
+  summary { cursor: pointer; font-weight: 700; color: var(--navy); list-style: none; }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: "+"; float: right; color: var(--sea); font-size: 1.3rem; line-height: 1; }
+  details[open] summary::after { content: "–"; }
+  details p { color: var(--muted); margin: 10px 0 0; }
+
+  /* Contact */
+  .contact { background: var(--navy); color: #fff; text-align: center; }
+  .contact h2 { color: #fff; }
+  .contact .sub { color: rgba(255,255,255,0.85); margin-left: auto; margin-right: auto; }
+  .contact-actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-bottom: 20px; }
+  .contact .btn.ghost { color: #fff; border-color: rgba(255,255,255,0.8); }
+  .contact a.plain { color: #fff; }
+
+  footer { background: #0c2333; color: rgba(255,255,255,0.7); font-size: 0.9rem; padding: 28px 0; text-align: center; }
+  footer a { color: rgba(255,255,255,0.85); }
+
+  /* Mobile sticky call bar */
+  .callbar { display: none; }
+  @media (max-width: 720px) {
+    .callbar {
+      display: flex; position: fixed; bottom: 0; left: 0; right: 0; z-index: 20;
+      background: #fff; border-top: 1px solid #e3e9ee; padding: 10px 12px; gap: 10px;
+    }
+    .callbar a { flex: 1; text-align: center; padding: 12px; border-radius: 10px; font-weight: 700; text-decoration: none; }
+    .callbar .call { background: var(--navy); color: #fff; }
+    .callbar .book { background: var(--accent); color: #fff; }
+    body { padding-bottom: 72px; }
+  }
+</style>
+</head>
+<body>
+
+<!--
+  ==========================================================
+  BEFORE YOU UPLOAD: find-and-replace these placeholders
+  ----------------------------------------------------------
+  PHONE_NUMBER  -> how it displays, e.g. (508) 555-0123
+  PHONE_LINK    -> digits only for the tap-to-call link, e.g. 5085550123
+  EMAIL         -> e.g. ryan@capewashandvent.com
+  BOOKING_URL   -> your Jobber / Housecall Pro / Square booking link
+                   (or use mailto:EMAIL until you have one)
+  Also check the prices and the town list below.
+  ==========================================================
+-->
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top">Cape <span>Wash</span> &amp; Vent</a>
+    <nav class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#how">How it works</a>
+      <a href="#area">Service area</a>
+      <a href="#faq">FAQ</a>
+      <a class="btn small" href="BOOKING_URL">Book now</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap">
+      <h1>Cleaner vents. Cleaner houses.<br>Right here on the Cape.</h1>
+      <p class="lead">Locally owned dryer vent cleaning and soft house washing for Cape Cod homes, rentals and condo associations. You'll get a photo report and before-and-after airflow readings after every vent job.</p>
+      <div class="hero-actions">
+        <a class="btn" href="BOOKING_URL">Book a cleaning</a>
+        <a class="btn ghost" href="tel:PHONE_LINK">Call or text PHONE_NUMBER</a>
+      </div>
+      <div class="badges">
+        <div>Fully insured</div>
+        <div>Locally owned in Centerville</div>
+        <div>Photo report with every job</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrap">
+      <h2>Services</h2>
+      <p class="sub">Simple, upfront pricing. Long, roof or second-story vents and heavy blockages may cost a bit more. You'll always know the price before work starts.</p>
+      <div class="cards">
+        <div class="card">
+          <div class="icon">🌀</div>
+          <h3>Dryer Vent Cleaning</h3>
+          <div class="price">Starting at $149</div>
+          <ul>
+            <li>Full vent run cleaned with rotary brush and HEPA vacuum</li>
+            <li>Lint trap housing and dryer connection cleaned</li>
+            <li>Bird nests and debris cleared from the outside hood</li>
+            <li>Camera inspection with before-and-after airflow readings</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="icon">🏠</div>
+          <h3>Soft House Washing <span class="tag">Spring 2027</span></h3>
+          <div class="price">Free quotes</div>
+          <ul>
+            <li>Low-pressure cleaning that's safe for cedar shingles, vinyl and trim</li>
+            <li>Removes mildew, algae and salt-air grime</li>
+            <li>Plants rinsed and protected before and after</li>
+            <li>Get on the spring list now</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="icon">🏘️</div>
+          <h3>Rentals &amp; Condo Associations</h3>
+          <div class="price">Volume pricing</div>
+          <ul>
+            <li>Multi-unit and whole-building vent cleaning</li>
+            <li>Scheduled around guest turnovers</li>
+            <li>Written reports for owners and boards</li>
+            <li>Annual service plans available</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="why">
+    <div class="wrap">
+      <h2>Why it matters</h2>
+      <p class="sub">Lint buildup in dryer vents is a leading cause of house fires, and a clogged vent makes your dryer work harder and wear out sooner.</p>
+      <div class="grid2">
+        <div>
+          <h3>Safer home</h3>
+          <p>Removing built-up lint takes away the fuel behind dryer fires.</p>
+        </div>
+        <div>
+          <h3>Faster drying</h3>
+          <p>Better airflow means shorter cycles and lower energy bills.</p>
+        </div>
+        <div>
+          <h3>Longer dryer life</h3>
+          <p>Less heat and strain on the motor and heating element.</p>
+        </div>
+        <div>
+          <h3>Proof, not promises</h3>
+          <p>You'll see the airflow numbers and photos, so you know the job was done.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Signs your vent needs cleaning</h2>
+      <p class="sub">Most homes need a cleaning once a year. Busy households and rentals may need it more often.</p>
+      <div class="signs">
+        <div class="sign"><strong>Clothes take more than one cycle</strong> to dry</div>
+        <div class="sign"><strong>The dryer or laundry room</strong> gets unusually hot</div>
+        <div class="sign"><strong>A burning or musty smell</strong> while drying</div>
+        <div class="sign"><strong>Lint around the outside vent</strong> or a flap that won't open</div>
+        <div class="sign"><strong>Birds or nests</strong> near the vent hood</div>
+        <div class="sign"><strong>It's been over a year</strong>, or you don't know when it was last cleaned</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how" class="why">
+    <div class="wrap">
+      <h2>How a vent cleaning works</h2>
+      <p class="sub">Most jobs take about an hour.</p>
+      <ol class="steps">
+        <li>We measure airflow at your outside vent so there's a "before" number.</li>
+        <li>We carefully move the dryer out, protecting your floors.</li>
+        <li>A camera checks the vent for clogs, nests and damage.</li>
+        <li>We clean the full run with a rotary brush while a HEPA vacuum catches the lint.</li>
+        <li>We reconnect everything without crushing or kinking the duct.</li>
+        <li>We measure airflow again and send you a photo report.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="area">
+    <div class="wrap">
+      <h2>Service area</h2>
+      <p class="sub">Based in Centerville and serving the Mid and Upper Cape. Not on the list? Ask us anyway.</p>
+      <div class="towns">
+        <span>Centerville</span><span>Hyannis</span><span>Osterville</span><span>Cotuit</span>
+        <span>Marstons Mills</span><span>West Barnstable</span><span>Barnstable</span>
+        <span>Yarmouth</span><span>Dennis</span><span>Mashpee</span><span>Sandwich</span><span>Falmouth</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap">
+      <h2>Questions</h2>
+      <details>
+        <summary>How often should a dryer vent be cleaned?</summary>
+        <p>Once a year for most homes. Large families, pet owners and rental properties with frequent turnovers often benefit from cleaning every six months.</p>
+      </details>
+      <details>
+        <summary>Do you work on gas dryers?</summary>
+        <p>Yes. We clean the vent without disconnecting the gas line. If we find a problem with a gas connection, we'll let you know so a licensed gas fitter can take care of it.</p>
+      </details>
+      <details>
+        <summary>What if you find a damaged or unsafe vent?</summary>
+        <p>We'll show you photos and explain what we found. If the duct needs replacing or rerouting, we'll refer you to a licensed installer.</p>
+      </details>
+      <details>
+        <summary>Do I need to be home?</summary>
+        <p>Not necessarily. For rentals and second homes, we can work with your property manager or a lockbox and send the report straight to you.</p>
+      </details>
+      <details>
+        <summary>Are you insured?</summary>
+        <p>Yes. We're fully insured, and we're happy to send a certificate of insurance to you, your property manager or your condo board.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <h2>Ready to book?</h2>
+      <p class="sub">Book online, or call or text for a quick quote. We usually reply the same day.</p>
+      <div class="contact-actions">
+        <a class="btn" href="BOOKING_URL">Book online</a>
+        <a class="btn ghost" href="tel:PHONE_LINK">Call PHONE_NUMBER</a>
+        <a class="btn ghost" href="sms:PHONE_LINK">Text us</a>
+      </div>
+      <p><a class="plain" href="mailto:EMAIL">EMAIL</a></p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    © <span id="yr">2026</span> Cape Wash &amp; Vent · Centerville, MA · Fully insured<br>
+    <a href="tel:PHONE_LINK">PHONE_NUMBER</a> · <a href="mailto:EMAIL">EMAIL</a>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a class="call" href="tel:PHONE_LINK">📞 Call</a>
+  <a class="book" href="BOOKING_URL">Book now</a>
+</div>
+
+<script>
+  document.getElementById("yr").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
