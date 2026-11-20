@@ -4,14 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Cape Wash & Vent | Dryer Vent Cleaning & House Washing on Cape Cod</title>
-<meta name="description" content="Locally owned dryer vent cleaning and soft house washing on Cape Cod. Before-and-after airflow readings, photo reports, fully insured. Serving Barnstable, Yarmouth, Mashpee, Dennis and nearby towns.">
+<meta name="description" content="Locally owned dryer vent cleaning and soft house washing on Cape Cod. Before-and-after airflow readings and a photo report with every vent job. Fully insured. Based in Centerville.">
 <link rel="canonical" href="https://capewashandvent.com/">
-
-<!-- Social share preview -->
 <meta property="og:title" content="Cape Wash & Vent">
 <meta property="og:description" content="Dryer vent cleaning and soft house washing on Cape Cod. Locally owned and fully insured.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://capewashandvent.com/">
+<meta name="theme-color" content="#16363B">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap" rel="stylesheet">
 
 <!-- Helps Google understand your business. Keep phone and email in sync with the page. -->
 <script type="application/ld+json">
@@ -20,7 +23,7 @@
   "@type": "HomeAndConstructionBusiness",
   "name": "Cape Wash & Vent",
   "url": "https://capewashandvent.com/",
-  "telephone": "(508) 419-2609",
+  "telephone": "+1-508-419-2609",
   "email": "ryan@capewashandvent.com",
   "areaServed": ["Barnstable, MA", "Centerville, MA", "Hyannis, MA", "Osterville, MA", "Cotuit, MA", "Marstons Mills, MA", "West Barnstable, MA", "Yarmouth, MA", "Dennis, MA", "Mashpee, MA", "Sandwich, MA", "Falmouth, MA"],
   "description": "Dryer vent cleaning and soft house washing on Cape Cod.",
@@ -28,158 +31,228 @@
 }
 </script>
 
-<style>
-  :root {
-    --navy: #12324a;
-    --sea: #1f6f8b;
-    --foam: #e8f3f6;
-    --sand: #f6f1e7;
-    --ink: #1c2730;
-    --muted: #5a6b78;
-    --accent: #e07a3f;
-    --radius: 14px;
-  }
-  * { box-sizing: border-box; }
-  html { scroll-behavior: smooth; }
-  body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    color: var(--ink);
-    line-height: 1.6;
-    background: #fff;
-  }
-  a { color: var(--sea); }
-  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 20px; }
-
-  /* Header */
-  header {
-    position: sticky; top: 0; z-index: 10;
-    background: rgba(255,255,255,0.96);
-    border-bottom: 1px solid #e3e9ee;
-  }
-  .nav { display: flex; align-items: center; justify-content: space-between; height: 64px; }
-  .logo { font-weight: 800; font-size: 1.15rem; color: var(--navy); text-decoration: none; letter-spacing: -0.01em; }
-  .logo span { color: var(--sea); }
-  .nav-links { display: flex; gap: 22px; align-items: center; }
-  .nav-links a { color: var(--ink); text-decoration: none; font-size: 0.95rem; }
-  .nav-links a.btn { color: #fff; }
-  @media (max-width: 720px) { .nav-links a:not(.btn) { display: none; } }
-
-  .btn {
-    display: inline-block; background: var(--accent); color: #fff; text-decoration: none;
-    font-weight: 700; padding: 12px 22px; border-radius: 999px; transition: transform .1s, filter .15s;
-  }
-  .btn:hover { filter: brightness(1.05); transform: translateY(-1px); }
-  .btn.ghost { background: transparent; color: var(--navy); border: 2px solid var(--navy); }
-  .btn.small { padding: 8px 16px; font-size: 0.9rem; }
-
-  /* Hero */
-  .hero {
-    background: linear-gradient(160deg, var(--navy) 0%, var(--sea) 100%);
-    color: #fff; padding: 84px 0 96px; position: relative; overflow: hidden;
-  }
-  .hero::after {
-    content: ""; position: absolute; left: -10%; right: -10%; bottom: -60px; height: 120px;
-    background: #fff; border-radius: 50% 50% 0 0;
-  }
-  .hero h1 { font-size: clamp(2rem, 5vw, 3.2rem); line-height: 1.15; margin: 0 0 16px; letter-spacing: -0.02em; }
-  .hero p.lead { font-size: 1.2rem; max-width: 620px; opacity: 0.95; margin: 0 0 28px; }
-  .hero .btn.ghost { color: #fff; border-color: rgba(255,255,255,0.8); }
-  .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
-  .badges { display: flex; gap: 18px; flex-wrap: wrap; margin-top: 32px; font-size: 0.95rem; opacity: 0.95; }
-  .badges div::before { content: "✓ "; font-weight: 700; }
-
-  section { padding: 72px 0; }
-  h2 { font-size: clamp(1.6rem, 3.5vw, 2.2rem); color: var(--navy); margin: 0 0 12px; letter-spacing: -0.01em; }
-  .sub { color: var(--muted); margin: 0 0 36px; max-width: 640px; }
-
-  /* Services */
-  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 20px; }
-  .card {
-    background: #fff; border: 1px solid #e3e9ee; border-radius: var(--radius); padding: 28px;
-    box-shadow: 0 2px 10px rgba(18,50,74,0.05);
-  }
-  .card .icon { font-size: 2rem; }
-  .card h3 { margin: 10px 0 6px; color: var(--navy); font-size: 1.25rem; }
-  .price { font-weight: 800; color: var(--sea); font-size: 1.1rem; margin: 4px 0 12px; }
-  .card ul { padding-left: 18px; margin: 0; color: var(--muted); }
-  .tag { display: inline-block; font-size: 0.75rem; font-weight: 700; background: var(--sand); color: #8a6a2f; padding: 3px 10px; border-radius: 999px; margin-left: 6px; vertical-align: middle; }
-
-  /* Why */
-  .why { background: var(--foam); }
-  .grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 28px; }
-  .why h3 { color: var(--navy); margin: 0 0 6px; font-size: 1.1rem; }
-  .why p { margin: 0; color: var(--muted); }
-
-  /* Signs */
-  .signs { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; }
-  .sign { background: var(--sand); border-radius: 10px; padding: 16px 18px; }
-  .sign strong { color: var(--navy); }
-
-  /* Process */
-  ol.steps { counter-reset: s; list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; }
-  ol.steps li { counter-increment: s; position: relative; padding: 14px 18px 14px 62px; border: 1px solid #e3e9ee; border-radius: 10px; }
-  ol.steps li::before {
-    content: counter(s); position: absolute; left: 16px; top: 50%; transform: translateY(-50%);
-    width: 32px; height: 32px; border-radius: 50%; background: var(--sea); color: #fff;
-    display: grid; place-items: center; font-weight: 700;
-  }
-
-  /* Area */
-  .towns { display: flex; flex-wrap: wrap; gap: 10px; }
-  .towns span { background: var(--foam); color: var(--navy); padding: 8px 14px; border-radius: 999px; font-size: 0.95rem; }
-
-  /* FAQ */
-  details { border-bottom: 1px solid #e3e9ee; padding: 16px 0; }
-  summary { cursor: pointer; font-weight: 700; color: var(--navy); list-style: none; }
-  summary::-webkit-details-marker { display: none; }
-  summary::after { content: "+"; float: right; color: var(--sea); font-size: 1.3rem; line-height: 1; }
-  details[open] summary::after { content: "–"; }
-  details p { color: var(--muted); margin: 10px 0 0; }
-
-  /* Contact */
-  .contact { background: var(--navy); color: #fff; text-align: center; }
-  .contact h2 { color: #fff; }
-  .contact .sub { color: rgba(255,255,255,0.85); margin-left: auto; margin-right: auto; }
-  .contact-actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-bottom: 20px; }
-  .contact .btn.ghost { color: #fff; border-color: rgba(255,255,255,0.8); }
-  .contact a.plain { color: #fff; }
-
-  footer { background: #0c2333; color: rgba(255,255,255,0.7); font-size: 0.9rem; padding: 28px 0; text-align: center; }
-  footer a { color: rgba(255,255,255,0.85); }
-
-  /* Mobile sticky call bar */
-  .callbar { display: none; }
-  @media (max-width: 720px) {
-    .callbar {
-      display: flex; position: fixed; bottom: 0; left: 0; right: 0; z-index: 20;
-      background: #fff; border-top: 1px solid #e3e9ee; padding: 10px 12px; gap: 10px;
-    }
-    .callbar a { flex: 1; text-align: center; padding: 12px; border-radius: 10px; font-weight: 700; text-decoration: none; }
-    .callbar .call { background: var(--navy); color: #fff; }
-    .callbar .book { background: var(--accent); color: #fff; }
-    body { padding-bottom: 72px; }
-  }
-</style>
-</head>
-<body>
-
 <!--
   BOOKING: the "Book" buttons open a pre-filled email for now.
   When you sign up for Jobber / Housecall Pro / Square, replace every
   mailto:ryan@capewashandvent.com?subject=Booking... link with your booking URL.
 -->
 
-<header>
-  <div class="wrap nav">
-    <a class="logo" href="#top">Cape <span>Wash</span> &amp; Vent</a>
-    <nav class="nav-links">
-      <a href="#services">Services</a>
-      <a href="#how">How it works</a>
-      <a href="#area">Service area</a>
-      <a href="#faq">FAQ</a>
-      <a class="btn small" href="mailto:ryan@capewashandvent.com?subject=Booking%20request&body=Name%3A%0AAddress%3A%0AService%20(vent%20cleaning%20or%20house%20washing)%3A%0APreferred%20days%2Ftimes%3A">Book now</a>
-    </nav>
+<style>
+  :root {
+    --fog: #EDF0EC;      /* page background: Cape morning fog */
+    --harbor: #16363B;   /* ink, headings, dark bands */
+    --shingle: #7D776C;  /* weathered cedar: secondary text, rules */
+    --lichen: #D3DBC7;   /* soft highlight */
+    --plum: #7C2D4F;     /* beach plum: the one action color */
+    --white: #FFFFFF;
+
+    --measure: 34rem;
+    --wide: 72rem;
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+  body {
+    margin: 0;
+    background: var(--fog);
+    color: var(--harbor);
+    font-family: "Archivo", system-ui, sans-serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    font-stretch: 100%;
+  }
+
+  a { color: inherit; }
+  :focus-visible { outline: 3px solid var(--plum); outline-offset: 3px; border-radius: 2px; }
+
+  .wrap { width: min(100% - 2.5rem, var(--wide)); margin-inline: auto; }
+
+  /* Display type: wide and heavy, like lettering on a work truck */
+  h1, h2, .wordmark {
+    font-stretch: 118%;
+    font-weight: 820;
+    letter-spacing: -0.015em;
+    line-height: 1.02;
+    margin: 0;
+  }
+  h1 { font-size: clamp(2.6rem, 6.4vw, 5rem); }
+  h2 { font-size: clamp(1.9rem, 3.8vw, 2.9rem); margin-bottom: 1rem; }
+  h3 { font-size: 1.2rem; font-weight: 700; margin: 0; font-stretch: 105%; }
+  p { margin: 0 0 1rem; max-width: var(--measure); }
+
+  /* Buttons */
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center;
+    min-height: 3.1rem; padding: 0 1.5rem;
+    font: inherit; font-weight: 700; font-stretch: 108%;
+    text-decoration: none; border-radius: 6px;
+    border: 2px solid transparent;
+  }
+  .btn-primary { background: var(--plum); color: var(--white); }
+  .btn-primary:hover { background: #69253F; }
+  .btn-line { border-color: currentColor; }
+  .btn-line:hover { background: rgba(22,54,59,0.07); }
+
+  /* Header */
+  .site-header { padding: 1.25rem 0; }
+  .site-header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+  .wordmark { font-size: 1.35rem; text-decoration: none; display: flex; align-items: center; gap: 0.6rem; }
+  .wordmark svg { flex: none; }
+  .header-phone { font-weight: 700; text-decoration: none; font-stretch: 108%; white-space: nowrap; }
+  .header-phone:hover { text-decoration: underline; }
+
+  /* Hero */
+  .hero { padding: 2.5rem 0 4.5rem; }
+  .hero .wrap {
+    display: grid; gap: 2.5rem; align-items: center;
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+  }
+  .hero h1 { margin-bottom: 1.4rem; }
+  .hero .lead { font-size: 1.2rem; max-width: 30rem; margin-bottom: 2rem; }
+  .actions { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+  .assurances { list-style: none; padding: 0; margin: 2rem 0 0; display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; color: var(--shingle); font-size: 0.95rem; }
+  .assurances li { display: flex; align-items: center; gap: 0.45rem; }
+  .assurances svg { flex: none; }
+
+  .house { width: 100%; height: auto; display: block; }
+  .house .air { stroke-dasharray: 14 18; animation: blow 2.4s linear infinite; }
+  .house .air:nth-of-type(2) { animation-delay: -0.8s; }
+  .house .air:nth-of-type(3) { animation-delay: -1.6s; }
+  @keyframes blow { to { stroke-dashoffset: -64; } }
+  @media (prefers-reduced-motion: reduce) { .house .air { animation: none; } }
+
+  /* Section rhythm */
+  .section { padding: 5rem 0; }
+  .section-head { margin-bottom: 2.5rem; }
+  .section-head p { color: #3E5559; }
+
+  /* Services: a price board, not a row of cards */
+  .board { border-top: 2px solid var(--harbor); }
+  .board-row {
+    display: grid; gap: 0.5rem 2.5rem;
+    grid-template-columns: minmax(0, 16rem) minmax(0, 1fr) auto;
+    padding: 1.75rem 0; border-bottom: 1px solid #B9BCB2;
+    align-items: baseline;
+  }
+  .board-row h3 { font-size: 1.45rem; font-stretch: 112%; font-weight: 780; }
+  .board-row p { margin: 0; color: #3E5559; }
+  .board-row .price { font-weight: 780; font-stretch: 112%; font-size: 1.3rem; text-align: right; white-space: nowrap; }
+  .board-row .price small { display: block; font-size: 0.85rem; font-weight: 500; font-stretch: 100%; color: var(--shingle); }
+  .board-note { color: var(--shingle); font-size: 0.95rem; margin-top: 1.25rem; max-width: 42rem; }
+
+  /* Report band */
+  .report { background: var(--harbor); color: var(--fog); }
+  .report .wrap { display: grid; gap: 3rem; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: center; }
+  .report p { color: #C7D3D0; }
+  .readout {
+    background: #1E464C; border-radius: 10px; padding: 1.75rem;
+    display: grid; gap: 1.25rem;
+  }
+  .readout-row { display: grid; grid-template-columns: 6.5rem 1fr; gap: 1rem; align-items: center; }
+  .readout-row span { font-weight: 700; font-stretch: 108%; }
+  .bar { height: 14px; border-radius: 7px; background: #2C5960; overflow: hidden; }
+  .bar i { display: block; height: 100%; border-radius: 7px; }
+  .bar .before { width: 28%; background: #8FA3A0; }
+  .bar .after { width: 92%; background: var(--lichen); }
+  .readout-caption { font-size: 0.9rem; color: #9FB3B0; margin: 0; }
+
+  /* Signs */
+  .signs { list-style: none; padding: 0; margin: 0; display: grid; gap: 0 3rem; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .signs li { padding: 1rem 0 1rem 2rem; border-bottom: 1px solid #B9BCB2; position: relative; }
+  .signs li::before {
+    content: ""; position: absolute; left: 0; top: 1.45rem;
+    width: 0.75rem; height: 0.75rem; border: 2px solid var(--plum); border-radius: 50%;
+  }
+
+  /* Process: a real sequence, so it gets numbers */
+  .steps { list-style: none; counter-reset: step; padding: 0; margin: 0; display: grid; gap: 2rem 3rem; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .steps li { counter-increment: step; }
+  .steps li::before {
+    content: counter(step);
+    display: block; font-weight: 820; font-stretch: 118%; font-size: 2.6rem; line-height: 1;
+    color: var(--plum); margin-bottom: 0.6rem;
+  }
+  .steps p { margin: 0.35rem 0 0; color: #3E5559; }
+
+  /* Area */
+  .area { background: var(--lichen); }
+  .area .wrap { display: grid; gap: 2.5rem; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); align-items: start; }
+  .towns { columns: 2; column-gap: 2rem; list-style: none; padding: 0; margin: 0; font-weight: 600; font-stretch: 108%; font-size: 1.15rem; }
+  .towns li { padding: 0.3rem 0; break-inside: avoid; }
+
+  /* FAQ */
+  .faq { max-width: 50rem; }
+  .faq details { border-bottom: 1px solid #B9BCB2; }
+  .faq summary {
+    cursor: pointer; list-style: none; padding: 1.25rem 2.5rem 1.25rem 0; position: relative;
+    font-weight: 700; font-stretch: 108%; font-size: 1.1rem;
+  }
+  .faq summary::-webkit-details-marker { display: none; }
+  .faq summary::after {
+    content: ""; position: absolute; right: 0.4rem; top: 50%; width: 0.6rem; height: 0.6rem;
+    border-right: 2px solid var(--harbor); border-bottom: 2px solid var(--harbor);
+    transform: translateY(-70%) rotate(45deg); transition: transform 0.2s;
+  }
+  .faq details[open] summary::after { transform: translateY(-30%) rotate(-135deg); }
+  .faq details p { color: #3E5559; padding-bottom: 1.25rem; margin: 0; }
+  @media (prefers-reduced-motion: reduce) { .faq summary::after { transition: none; } }
+
+  /* Contact */
+  .contact { background: var(--harbor); color: var(--fog); }
+  .contact h2 { max-width: 40rem; }
+  .contact p { color: #C7D3D0; }
+  .contact .btn-line { color: var(--fog); }
+  .contact .btn-line:hover { background: rgba(237,240,236,0.08); }
+  .contact-email { margin-top: 1.5rem; }
+  .contact-email a { color: var(--fog); }
+
+  footer { background: #10292D; color: #9FB3B0; font-size: 0.9rem; padding: 1.75rem 0; }
+  footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.5rem 2rem; }
+  footer a { color: #C7D3D0; }
+
+  /* Phone call bar */
+  .callbar { display: none; }
+
+  @media (max-width: 860px) {
+    .hero .wrap, .report .wrap, .area .wrap { grid-template-columns: 1fr; }
+    .hero { padding-top: 1rem; }
+    .house { max-width: 30rem; margin-inline: auto; }
+    .board-row { grid-template-columns: 1fr auto; }
+    .board-row p { grid-column: 1 / -1; grid-row: 2; }
+    .steps { grid-template-columns: 1fr; }
+    .signs { grid-template-columns: 1fr; }
+    .section { padding: 3.75rem 0; }
+  }
+  @media (max-width: 640px) {
+    .header-phone { display: none; }
+    .callbar {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem;
+      position: fixed; inset: auto 0 0 0; z-index: 20;
+      padding: 0.65rem 0.75rem calc(0.65rem + env(safe-area-inset-bottom));
+      background: var(--fog); border-top: 1px solid #B9BCB2;
+    }
+    .callbar .btn { min-height: 2.9rem; }
+    body { padding-bottom: 4.5rem; }
+    .towns { columns: 1; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="wordmark" href="#top" aria-label="Cape Wash & Vent home">
+      <svg width="34" height="30" viewBox="0 0 34 30" aria-hidden="true">
+        <path d="M3 14 L17 3 L31 14" fill="none" stroke="#16363B" stroke-width="3" stroke-linejoin="round"/>
+        <rect x="6" y="14" width="22" height="13" fill="none" stroke="#16363B" stroke-width="3"/>
+        <path d="M30 19 q2.5 -2 5 0" fill="none" stroke="#7C2D4F" stroke-width="2.5" stroke-linecap="round"/>
+        <path d="M30 23.5 q2.5 -2 5 0" fill="none" stroke="#7C2D4F" stroke-width="2.5" stroke-linecap="round"/>
+      </svg>
+      Cape Wash &amp; Vent
+    </a>
+    <a class="header-phone" href="tel:+15084192609">(508) 419-2609</a>
   </div>
 </header>
 
@@ -187,165 +260,201 @@
 
   <section class="hero">
     <div class="wrap">
-      <h1>Cleaner vents. Cleaner houses.<br>Right here on the Cape.</h1>
-      <p class="lead">Locally owned dryer vent cleaning and soft house washing for Cape Cod homes, rentals and condo associations. You'll get a photo report and before-and-after airflow readings after every vent job.</p>
-      <div class="hero-actions">
-        <a class="btn" href="mailto:ryan@capewashandvent.com?subject=Booking%20request&body=Name%3A%0AAddress%3A%0AService%20(vent%20cleaning%20or%20house%20washing)%3A%0APreferred%20days%2Ftimes%3A">Book a cleaning</a>
-        <a class="btn ghost" href="tel:+15084192609">Call or text (508) 419-2609</a>
+      <div>
+        <h1>Clear vents and clean shingles for Cape homes.</h1>
+        <p class="lead">Dryer vent cleaning and soft house washing from a local owner-operator in Centerville. Every vent job comes with before-and-after airflow readings and photos.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="mailto:ryan@capewashandvent.com?subject=Booking%20request&body=Name%3A%0AAddress%3A%0AService%20(vent%20cleaning%20or%20house%20washing)%3A%0APreferred%20days%2Ftimes%3A">Book a vent cleaning</a>
+          <a class="btn btn-line" href="tel:+15084192609">Call or text (508) 419-2609</a>
+        </div>
+        <ul class="assurances">
+          <li><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#7C2D4F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Fully insured</li>
+          <li><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#7C2D4F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Upfront prices</li>
+          <li><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#7C2D4F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Evenings and Saturdays available</li>
+        </ul>
       </div>
-      <div class="badges">
-        <div>Fully insured</div>
-        <div>Locally owned in Centerville</div>
-        <div>Photo report with every job</div>
+
+      <!-- A Cape house in line drawing, with air moving out of a clean vent -->
+      <svg class="house" viewBox="0 0 600 430" role="img" aria-label="Drawing of a Cape Cod house with air flowing out of its dryer vent">
+        <defs>
+          <pattern id="shingles" width="22" height="16" patternUnits="userSpaceOnUse">
+            <path d="M0 15.5 H22 M11 0 V8 M0 8 H22" stroke="#7D776C" stroke-width="1" opacity="0.55" fill="none"/>
+            <path d="M5 8 V16 M16 8 V16" stroke="#7D776C" stroke-width="1" opacity="0.35" fill="none"/>
+          </pattern>
+        </defs>
+        <!-- ground -->
+        <path d="M10 392 H590" stroke="#16363B" stroke-width="3" stroke-linecap="round"/>
+        <!-- dune grass -->
+        <g stroke="#7D776C" stroke-width="2.2" fill="none" stroke-linecap="round">
+          <path d="M40 392 q4 -30 -6 -50"/><path d="M48 392 q2 -26 12 -42"/><path d="M56 392 q-2 -22 -12 -34"/>
+          <path d="M548 392 q4 -28 -4 -46"/><path d="M556 392 q2 -22 12 -36"/>
+        </g>
+        <!-- walls -->
+        <rect x="110" y="200" width="330" height="192" fill="url(#shingles)" stroke="#16363B" stroke-width="3.5"/>
+        <!-- roof -->
+        <path d="M90 204 L275 92 L460 204 Z" fill="#EDF0EC" stroke="#16363B" stroke-width="3.5" stroke-linejoin="round"/>
+        <g stroke="#7D776C" stroke-width="1" opacity="0.5">
+          <path d="M140 176 H410"/><path d="M175 154 H375"/><path d="M210 133 H340"/><path d="M243 113 H307"/>
+        </g>
+        <!-- chimney -->
+        <rect x="256" y="62" width="38" height="52" fill="#EDF0EC" stroke="#16363B" stroke-width="3.5"/>
+        <path d="M250 62 H300" stroke="#16363B" stroke-width="3.5"/>
+        <!-- door with transom -->
+        <rect x="253" y="290" width="44" height="102" fill="#7C2D4F" stroke="#16363B" stroke-width="3.5"/>
+        <path d="M253 278 H297 V290 H253 Z" fill="#EDF0EC" stroke="#16363B" stroke-width="2.5"/>
+        <circle cx="288" cy="344" r="2.6" fill="#EDF0EC"/>
+        <!-- windows -->
+        <g fill="#EDF0EC" stroke="#16363B" stroke-width="3">
+          <rect x="140" y="250" width="44" height="64"/><rect x="194" y="250" width="44" height="64"/>
+          <rect x="312" y="250" width="44" height="64"/><rect x="366" y="250" width="44" height="64"/>
+        </g>
+        <g stroke="#16363B" stroke-width="1.6">
+          <path d="M162 250 V314 M140 282 H184"/><path d="M216 250 V314 M194 282 H238"/>
+          <path d="M334 250 V314 M312 282 H356"/><path d="M388 250 V314 M366 282 H410"/>
+        </g>
+        <!-- side bump-out with dryer vent -->
+        <rect x="440" y="282" width="62" height="110" fill="url(#shingles)" stroke="#16363B" stroke-width="3.5"/>
+        <path d="M434 286 L471 256 L508 286" fill="#EDF0EC" stroke="#16363B" stroke-width="3.5" stroke-linejoin="round"/>
+        <rect x="476" y="330" width="22" height="18" rx="2" fill="#EDF0EC" stroke="#16363B" stroke-width="3"/>
+        <path d="M478 336 H496 M478 342 H496" stroke="#16363B" stroke-width="1.6"/>
+        <!-- clean airflow -->
+        <g fill="none" stroke="#7C2D4F" stroke-width="3.2" stroke-linecap="round">
+          <path class="air" d="M502 332 C530 326 548 316 584 318"/>
+          <path class="air" d="M502 339 C534 340 552 346 588 340"/>
+          <path class="air" d="M502 346 C528 356 546 366 578 366"/>
+        </g>
+      </svg>
+    </div>
+  </section>
+
+  <section class="section" id="services" aria-labelledby="services-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="services-title">What we do</h2>
+        <p>You'll know the price before any work starts.</p>
+      </div>
+      <div class="board">
+        <div class="board-row">
+          <h3>Dryer vent cleaning</h3>
+          <p>The full vent run brushed and vacuumed, the lint trap housing and dryer connection cleaned, and the outside hood cleared of lint and nests. Includes a camera check and airflow readings.</p>
+          <div class="price">From $149<small>per dryer</small></div>
+        </div>
+        <div class="board-row">
+          <h3>Soft house washing</h3>
+          <p>Low-pressure washing that's safe for cedar shingles, vinyl and trim. Removes mildew, algae and salt-air grime, with plants rinsed before and after. Booking now for spring 2027.</p>
+          <div class="price">Free quote<small>by house size</small></div>
+        </div>
+        <div class="board-row">
+          <h3>Rentals and condo associations</h3>
+          <p>Whole-building and multi-unit vent cleaning, scheduled around guest turnovers, with a written report for owners and boards.</p>
+          <div class="price">Volume rates<small>annual plans</small></div>
+        </div>
+      </div>
+      <p class="board-note">Roof vents, second-story vents and very long runs may cost more. Gas dryers welcome: we clean the vent without touching the gas line.</p>
+    </div>
+  </section>
+
+  <section class="section report" aria-labelledby="report-title">
+    <div class="wrap">
+      <div>
+        <h2 id="report-title">You'll see the difference in numbers.</h2>
+        <p>Before we touch anything, we measure the airflow at your outside vent. We measure again when we're done and send you both readings, along with photos and camera footage from inside the vent.</p>
+        <p>Better airflow means shorter drying cycles, less heat on your dryer, and less lint left behind to catch fire.</p>
+      </div>
+      <div class="readout" aria-label="Illustration of a before-and-after airflow comparison">
+        <div class="readout-row"><span>Before</span><div class="bar"><i class="before"></i></div></div>
+        <div class="readout-row"><span>After</span><div class="bar"><i class="after"></i></div></div>
+        <p class="readout-caption">Illustration. Your report shows the actual readings from your vent.</p>
       </div>
     </div>
   </section>
 
-  <section id="services">
+  <section class="section" aria-labelledby="signs-title">
     <div class="wrap">
-      <h2>Services</h2>
-      <p class="sub">Simple, upfront pricing. Long, roof or second-story vents and heavy blockages may cost a bit more. You'll always know the price before work starts.</p>
-      <div class="cards">
-        <div class="card">
-          <div class="icon">🌀</div>
-          <h3>Dryer Vent Cleaning</h3>
-          <div class="price">Starting at $149</div>
-          <ul>
-            <li>Full vent run cleaned with rotary brush and HEPA vacuum</li>
-            <li>Lint trap housing and dryer connection cleaned</li>
-            <li>Bird nests and debris cleared from the outside hood</li>
-            <li>Camera inspection with before-and-after airflow readings</li>
-          </ul>
-        </div>
-        <div class="card">
-          <div class="icon">🏠</div>
-          <h3>Soft House Washing <span class="tag">Spring 2027</span></h3>
-          <div class="price">Free quotes</div>
-          <ul>
-            <li>Low-pressure cleaning that's safe for cedar shingles, vinyl and trim</li>
-            <li>Removes mildew, algae and salt-air grime</li>
-            <li>Plants rinsed and protected before and after</li>
-            <li>Get on the spring list now</li>
-          </ul>
-        </div>
-        <div class="card">
-          <div class="icon">🏘️</div>
-          <h3>Rentals &amp; Condo Associations</h3>
-          <div class="price">Volume pricing</div>
-          <ul>
-            <li>Multi-unit and whole-building vent cleaning</li>
-            <li>Scheduled around guest turnovers</li>
-            <li>Written reports for owners and boards</li>
-            <li>Annual service plans available</li>
-          </ul>
-        </div>
+      <div class="section-head">
+        <h2 id="signs-title">Time for a cleaning?</h2>
+        <p>Most homes need one a year. Busy households and rentals often need it twice.</p>
       </div>
+      <ul class="signs">
+        <li>Clothes need more than one cycle to dry</li>
+        <li>The dryer or laundry room gets unusually hot</li>
+        <li>You smell something burning or musty while drying</li>
+        <li>Lint collects around the outside vent, or the flap won't open</li>
+        <li>Birds are nesting near the vent hood</li>
+        <li>It's been over a year, or you don't know when it was last done</li>
+      </ul>
     </div>
   </section>
 
-  <section class="why">
+  <section class="section" id="how" aria-labelledby="how-title" style="padding-top:0">
     <div class="wrap">
-      <h2>Why it matters</h2>
-      <p class="sub">Lint buildup in dryer vents is a leading cause of house fires, and a clogged vent makes your dryer work harder and wear out sooner.</p>
-      <div class="grid2">
-        <div>
-          <h3>Safer home</h3>
-          <p>Removing built-up lint takes away the fuel behind dryer fires.</p>
-        </div>
-        <div>
-          <h3>Faster drying</h3>
-          <p>Better airflow means shorter cycles and lower energy bills.</p>
-        </div>
-        <div>
-          <h3>Longer dryer life</h3>
-          <p>Less heat and strain on the motor and heating element.</p>
-        </div>
-        <div>
-          <h3>Proof, not promises</h3>
-          <p>You'll see the airflow numbers and photos, so you know the job was done.</p>
-        </div>
+      <div class="section-head">
+        <h2 id="how-title">How a vent cleaning goes</h2>
+        <p>About an hour from start to finish.</p>
       </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="wrap">
-      <h2>Signs your vent needs cleaning</h2>
-      <p class="sub">Most homes need a cleaning once a year. Busy households and rentals may need it more often.</p>
-      <div class="signs">
-        <div class="sign"><strong>Clothes take more than one cycle</strong> to dry</div>
-        <div class="sign"><strong>The dryer or laundry room</strong> gets unusually hot</div>
-        <div class="sign"><strong>A burning or musty smell</strong> while drying</div>
-        <div class="sign"><strong>Lint around the outside vent</strong> or a flap that won't open</div>
-        <div class="sign"><strong>Birds or nests</strong> near the vent hood</div>
-        <div class="sign"><strong>It's been over a year</strong>, or you don't know when it was last cleaned</div>
-      </div>
-    </div>
-  </section>
-
-  <section id="how" class="why">
-    <div class="wrap">
-      <h2>How a vent cleaning works</h2>
-      <p class="sub">Most jobs take about an hour.</p>
       <ol class="steps">
-        <li>We measure airflow at your outside vent so there's a "before" number.</li>
-        <li>We carefully move the dryer out, protecting your floors.</li>
-        <li>A camera checks the vent for clogs, nests and damage.</li>
-        <li>We clean the full run with a rotary brush while a HEPA vacuum catches the lint.</li>
-        <li>We reconnect everything without crushing or kinking the duct.</li>
-        <li>We measure airflow again and send you a photo report.</li>
+        <li><h3>Measure</h3><p>We take an airflow reading at your outside vent.</p></li>
+        <li><h3>Move the dryer</h3><p>We slide it out on pads so your floors stay unmarked.</p></li>
+        <li><h3>Look inside</h3><p>A camera checks the run for clogs, nests and crushed sections.</p></li>
+        <li><h3>Clean</h3><p>A rotary brush scrubs the full run while a HEPA vacuum catches the lint.</p></li>
+        <li><h3>Reconnect</h3><p>Everything goes back without kinking or crushing the duct.</p></li>
+        <li><h3>Report</h3><p>We measure again and send you the readings and photos.</p></li>
       </ol>
     </div>
   </section>
 
-  <section id="area">
+  <section class="section area" id="area" aria-labelledby="area-title">
     <div class="wrap">
-      <h2>Service area</h2>
-      <p class="sub">Based in Centerville and serving the Mid and Upper Cape. Not on the list? Ask us anyway.</p>
-      <div class="towns">
-        <span>Centerville</span><span>Hyannis</span><span>Osterville</span><span>Cotuit</span>
-        <span>Marstons Mills</span><span>West Barnstable</span><span>Barnstable</span>
-        <span>Yarmouth</span><span>Dennis</span><span>Mashpee</span><span>Sandwich</span><span>Falmouth</span>
+      <div>
+        <h2 id="area-title">Where we work</h2>
+        <p>Based in Centerville and serving the Mid and Upper Cape. If your town isn't listed, ask anyway.</p>
+      </div>
+      <ul class="towns">
+        <li>Centerville</li><li>Hyannis</li><li>Osterville</li><li>Cotuit</li>
+        <li>Marstons Mills</li><li>West Barnstable</li><li>Barnstable Village</li>
+        <li>Yarmouth</li><li>Dennis</li><li>Mashpee</li><li>Sandwich</li><li>Falmouth</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="faq" aria-labelledby="faq-title">
+    <div class="wrap">
+      <div class="section-head"><h2 id="faq-title">Questions</h2></div>
+      <div class="faq">
+        <details>
+          <summary>How often should a dryer vent be cleaned?</summary>
+          <p>Once a year for most homes. Large families, pet owners and rentals with frequent turnovers do better with a cleaning every six months.</p>
+        </details>
+        <details>
+          <summary>Do you work on gas dryers?</summary>
+          <p>Yes. We clean the vent without disconnecting the gas line. If we spot a problem with the gas connection, we'll tell you so a licensed gas fitter can handle it.</p>
+        </details>
+        <details>
+          <summary>What if the vent is damaged?</summary>
+          <p>We'll show you photos and explain what we found. If the duct needs replacing or rerouting, we'll refer you to a licensed installer.</p>
+        </details>
+        <details>
+          <summary>Do I need to be home?</summary>
+          <p>Not always. For rentals and second homes, we can work with your property manager or a lockbox and send the report straight to you.</p>
+        </details>
+        <details>
+          <summary>Are you insured?</summary>
+          <p>Yes. We'll send a certificate of insurance to you, your property manager or your condo board on request.</p>
+        </details>
       </div>
     </div>
   </section>
 
-  <section id="faq">
+  <section class="section contact" id="contact" aria-labelledby="contact-title">
     <div class="wrap">
-      <h2>Questions</h2>
-      <details>
-        <summary>How often should a dryer vent be cleaned?</summary>
-        <p>Once a year for most homes. Large families, pet owners and rental properties with frequent turnovers often benefit from cleaning every six months.</p>
-      </details>
-      <details>
-        <summary>Do you work on gas dryers?</summary>
-        <p>Yes. We clean the vent without disconnecting the gas line. If we find a problem with a gas connection, we'll let you know so a licensed gas fitter can take care of it.</p>
-      </details>
-      <details>
-        <summary>What if you find a damaged or unsafe vent?</summary>
-        <p>We'll show you photos and explain what we found. If the duct needs replacing or rerouting, we'll refer you to a licensed installer.</p>
-      </details>
-      <details>
-        <summary>Do I need to be home?</summary>
-        <p>Not necessarily. For rentals and second homes, we can work with your property manager or a lockbox and send the report straight to you.</p>
-      </details>
-      <details>
-        <summary>Are you insured?</summary>
-        <p>Yes. We're fully insured, and we're happy to send a certificate of insurance to you, your property manager or your condo board.</p>
-      </details>
-    </div>
-  </section>
-
-  <section class="contact" id="contact">
-    <div class="wrap">
-      <h2>Ready to book?</h2>
-      <p class="sub">Email a booking request, or call or text for a quick quote. We usually reply the same day.</p>
-      <div class="contact-actions">
-        <a class="btn" href="mailto:ryan@capewashandvent.com?subject=Booking%20request&body=Name%3A%0AAddress%3A%0AService%20(vent%20cleaning%20or%20house%20washing)%3A%0APreferred%20days%2Ftimes%3A">Request a booking</a>
-        <a class="btn ghost" href="tel:+15084192609">Call (508) 419-2609</a>
-        <a class="btn ghost" href="sms:+15084192609">Text us</a>
+      <h2 id="contact-title">Book a cleaning or ask for a quote.</h2>
+      <p>Call or text and you'll usually hear back the same day.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="mailto:ryan@capewashandvent.com?subject=Booking%20request&body=Name%3A%0AAddress%3A%0AService%20(vent%20cleaning%20or%20house%20washing)%3A%0APreferred%20days%2Ftimes%3A">Email a booking request</a>
+        <a class="btn btn-line" href="tel:+15084192609">Call (508) 419-2609</a>
+        <a class="btn btn-line" href="sms:+15084192609">Text us</a>
       </div>
-      <p><a class="plain" href="mailto:ryan@capewashandvent.com">ryan@capewashandvent.com</a></p>
+      <p class="contact-email">Or write to <a href="mailto:ryan@capewashandvent.com">ryan@capewashandvent.com</a></p>
     </div>
   </section>
 
@@ -353,18 +462,16 @@
 
 <footer>
   <div class="wrap">
-    © <span id="yr">2026</span> Cape Wash &amp; Vent · Centerville, MA · Fully insured<br>
-    <a href="tel:+15084192609">(508) 419-2609</a> · <a href="mailto:ryan@capewashandvent.com">ryan@capewashandvent.com</a>
+    <span>&copy; <span id="yr">2026</span> Cape Wash &amp; Vent, Centerville, MA. Fully insured.</span>
+    <span><a href="tel:+15084192609">(508) 419-2609</a> &nbsp; <a href="mailto:ryan@capewashandvent.com">ryan@capewashandvent.com</a></span>
   </div>
 </footer>
 
-<div class="callbar">
-  <a class="call" href="tel:+15084192609">📞 Call</a>
-  <a class="book" href="mailto:ryan@capewashandvent.com?subject=Booking%20request&body=Name%3A%0AAddress%3A%0AService%20(vent%20cleaning%20or%20house%20washing)%3A%0APreferred%20days%2Ftimes%3A">Book now</a>
-</div>
+<nav class="callbar" aria-label="Quick contact">
+  <a class="btn btn-line" href="tel:+15084192609">Call</a>
+  <a class="btn btn-primary" href="mailto:ryan@capewashandvent.com?subject=Booking%20request&body=Name%3A%0AAddress%3A%0AService%20(vent%20cleaning%20or%20house%20washing)%3A%0APreferred%20days%2Ftimes%3A">Book</a>
+</nav>
 
-<script>
-  document.getElementById("yr").textContent = new Date().getFullYear();
-</script>
+<script>document.getElementById("yr").textContent = new Date().getFullYear();</script>
 </body>
 </html>
